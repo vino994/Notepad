@@ -1,0 +1,57 @@
+body{
+    background-color: gray;
+}
+:root{
+    --size:250px;
+}
+.container{
+    display: flex;
+    position: relative;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.container .inside_container{
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 30px;
+}
+#create_box{
+    position: relative;
+    width:var(--size);
+    height: var(--size);
+    background-color: red;
+    display: flex;
+    align-items: center;
+
+    justify-content: center;
+    cursor: pointer;
+}
+#create_box span{
+    font-size: 5rem;
+    position: absolute;
+}
+.createContent{
+    position:relative;
+    width: var(--size);
+    height: var(--size);
+    display: none;
+    
+}
+#create_box .createContent textarea{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    outline: none;
+    
+}
+.note{
+    position: relative;
+    width: var(--size);
+    height: var(--size);
+    background-color: blue;
+}
